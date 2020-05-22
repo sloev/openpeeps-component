@@ -55,3 +55,5 @@ To build static storybook site (default output folder is /docs for easly sharing
 ```bash
 npm run build-storybook
 ```
+
+https://github.com/CeamKrier/react-peeps/blob/master/src/peeps/face/Angry.tsx

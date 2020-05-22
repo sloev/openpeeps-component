@@ -9,7 +9,8 @@
     "prepublishOnly": "npm run build",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs"
+    "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs",
+    "format": "npx prettier --write \"{,!(node_modules)/**/}*.{js,jsx}\""
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -24,7 +25,11 @@
     "babel-jest": "^25.2.6",
     "babel-loader": "^8.1.0",
     "del-cli": "^3.0.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-svelte3": "^2.7.3",
     "jest": "^25.2.7",
+    "prettier": "^2.0.5",
+    "prettier-plugin-svelte": "^1.1.0",
     "rollup": "^1.20.0",
     "rollup-plugin-svelte": "^5.0.0",
     "rollup-plugin-terser": "^5.3.0",

@@ -1,19 +1,25 @@
-import { action } from '@storybook/addon-actions';
-import Component from '../src/index';
+import { action } from '@storybook/addon-actions'
+import Component from '../src/index'
+import FacesView from '../src/views/FacesView.svelte'
+import PosesView from '../src/views/PosesView.svelte'
+import AccessoriesView from '../src/views/AccessoriesView.svelte'
 
 export default {
   title: 'Component',
   component: Component,
-};
+}
 
-export const Text = () => ({
-  Component: Component,
-  props: { name: 'World', buttonText: 'Hello Button' },
-  on: { click: action('clicked') },
-});
+export const Faces = () => ({
+  Component: FacesView,
+  props: {},
+})
 
-export const Emoji = () => ({
-  Component: Component,
-  props: { name: '😀 😎', buttonText: '👍 💯', face:'Awe' },
-  on: { click: action('clicked') },
-});
+export const Poses = () => ({
+  Component: PosesView,
+  props: {},
+})
+
+export const Accessories = () => ({
+  Component: AccessoriesView,
+  props: {},
+})

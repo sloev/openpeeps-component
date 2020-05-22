@@ -11,7 +11,7 @@ describe('Component', () => {
     const { getByText } = render(Component, { name: 'World' })
 
     expect(getByText('Hello World!')).toBeInTheDocument()
-  });
+  })
 
   // Note: This is as an async test as we are using `fireEvent`
   it('changes button text on click', async () => {
@@ -23,5 +23,5 @@ describe('Component', () => {
     await fireEvent.click(button)
 
     expect(button).toHaveTextContent('Button Clicked')
-  });
-});
+  })
+})
