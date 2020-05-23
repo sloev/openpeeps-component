@@ -3,6 +3,7 @@ import Component from '../src/index'
 import FacesView from '../src/views/FacesView.svelte'
 import PosesView from '../src/views/PosesView.svelte'
 import AccessoriesView from '../src/views/AccessoriesView.svelte'
+import FacesChangingView from '../src/views/FacesChangingView.svelte'
 
 export default {
   title: 'Component',
@@ -11,6 +12,11 @@ export default {
 
 export const Faces = () => ({
   Component: FacesView,
+  props: {},
+})
+
+export const FacesChanging = () => ({
+  Component: FacesChangingView,
   props: {},
 })
 
